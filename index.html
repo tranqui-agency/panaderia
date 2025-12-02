@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Los Medialunos - Las Mejores Medialunas del Mundo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FFF8E7',
+                        brown: '#8B4513',
+                        gold: '#D4AF37'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cream">
+    <!-- Header -->
+    <header class="bg-brown text-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">🥐 Los Medialunos</div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#inicio" class="hover:text-gold transition">Inicio</a></li>
+                <li><a href="#nosotros" class="hover:text-gold transition">Nosotros</a></li>
+                <li><a href="#productos" class="hover:text-gold transition">Productos</a></li>
+                <li><a href="#contacto" class="hover:text-gold transition">Contacto</a></li>
+            </ul>
+            <button onclick="toggleMenu()" class="md:hidden text-2xl">☰</button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-brown/95 px-4 pb-4">
+            <a href="#inicio" class="block py-2 hover:text-gold">Inicio</a>
+            <a href="#nosotros" class="block py-2 hover:text-gold">Nosotros</a>
+            <a href="#productos" class="block py-2 hover:text-gold">Productos</a>
+            <a href="#contacto" class="block py-2 hover:text-gold">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative bg-gradient-to-br from-amber-100 to-orange-100 py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-brown mb-6">Las Mejores Medialunas<br>del Mundo</h1>
+            <p class="text-xl md:text-2xl text-brown/80 mb-8 max-w-2xl mx-auto">Horneadas con amor cada mañana en el corazón de Buenos Aires</p>
+            <div class="text-8xl mb-8">🥐</div>
+            <a href="#productos" class="inline-block bg-brown text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-brown/90 transition shadow-lg">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-12">Nuestra Historia</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="text-lg text-gray-700 mb-6">Desde 1985, Panadería Los Medialunos ha sido un ícono en Buenos Aires, deleitando a porteños y visitantes con nuestras medialunas artesanales.</p>
+                        <p class="text-lg text-gray-700 mb-6">Nuestra receta secreta, transmitida por tres generaciones, combina manteca de primera calidad, masa hojaldrada perfecta y el amor por la tradición argentina.</p>
+                        <p class="text-lg text-gray-700">Cada medialuna es horneada a mano, garantizando ese exterior crocante y interior tierno que nos ha hecho famosos.</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl shadow-xl">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">🏆</div>
+                            <h3 class="text-2xl font-bold text-brown mb-4">Reconocimientos</h3>
+                            <ul class="text-left space-y-2 text-gray-700">
+                                <li>✓ Mejor Panadería de BA 2020</li>
+                                <li>✓ Premio Tradición Argentina</li>
+                                <li>✓ 5 estrellas en Google</li>
+                                <li>✓ +38 años de experiencia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="py-20 bg-cream">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-4">Nuestros Productos</h2>
+            <p class="text-center text-gray-600 mb-12 text-lg">Horneados frescos todos los días</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition">
+                    <div class="bg-gradient-to-br from-amber-200 to-orange-200 h-48 flex items-center justify-center text-8xl">
+                        🥐
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-brown mb-2">Medialunas de Manteca</h3>
+                        <p class="text-gray-600 mb-4">Clásicas, crocantes y con el sabor tradicional que nos hizo famosos.</p>
+                        <p class="text-3xl font-bold text-gold">$800</p>
+                        <p class="text-sm text-gray-500">Docena</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition">
+                    <div class="bg-gradient-to-br from-yellow-200 to-amber-200 h-48 flex items-center justify-center text-8xl">
+                        🥐
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-brown mb-2">Medialunas de Grasa</h3>
+                        <p class="text-gray-600 mb-4">Esponjosas y suaves, perfectas para el mate de la tarde.</p>
+                        <p class="text-3xl font-bold text-gold">$600</p>
+                        <p class="text-sm text-gray-500">Docena</p>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition">
+                    <div class="bg-gradient-to-br from-orange-200 to-red-200 h-48 flex items-center justify-center text-8xl">
+                        🍞
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-brown mb-2">Pan Artesanal</h3>
+                        <p class="text-gray-600 mb-4">Variedades de pan fresco horneado diariamente.</p>
+                        <p class="text-3xl font-bold text-gold">$500</p>
+                        <p class="text-sm text-gray-500">Por unidad</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-lg text-gray-700 mb-4">🕐 Horneamos de 6:00 AM a 8:00 PM todos los días</p>
+                <p class="text-sm text-gray-600">*Precios sujetos a cambio</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-brown text-center mb-12">Visitanos</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl">📍</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-brown mb-2">Dirección</h3>
+                            <p class="text-gray-700">Av. Corrientes 1234<br>Buenos Aires, Argentina</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl">📞</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-brown mb-2">Teléfono</h3>
+                            <p class="text-gray-700">+54 11 4567-8900</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl">⏰</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-brown mb-2">Horarios</h3>
+                            <p class="text-gray-700">Lunes a Domingo<br>6:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl">📧</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-brown mb-2">Email</h3>
+                            <p class="text-gray-700">info@losmedialunos.com.ar</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl shadow-xl">
+                    <h3 class="text-2xl font-bold text-brown mb-6">Envianos un Mensaje</h3>
+                    <form class="space-y-4" onsubmit="handleSubmit(event)">
+                        <input type="text" placeholder="Nombre" required class="w-full px-4 py-3 rounded-lg border border-brown/20 focus:outline-none focus:border-brown">
+                        <input type="email" placeholder="Email" required class="w-full px-4 py-3 rounded-lg border border-brown/20 focus:outline-none focus:border-brown">
+                        <textarea placeholder="Mensaje" rows="4" required class="w-full px-4 py-3 rounded-lg border border-brown/20 focus:outline-none focus:border-brown"></textarea>
+                        <button type="submit" class="w-full bg-brown text-white py-3 rounded-lg font-semibold hover:bg-brown/90 transition">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brown text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="text-4xl mb-4">🥐</div>
+            <h3 class="text-2xl font-bold mb-2">Panadería Los Medialunos</h3>
+            <p class="text-white/80 mb-4">Las mejores medialunas del mundo desde 1985</p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-2xl hover:text-gold transition">📘</a>
+                <a href="#" class="text-2xl hover:text-gold transition">📷</a>
+                <a href="#" class="text-2xl hover:text-gold transition">🐦</a>
+            </div>
+            <p class="text-white/60 text-sm">© 2024 Panadería Los Medialunos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+            e.target.reset();
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
