@@ -3,78 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panadería las medialunas de mi abuela</title>
+    <title>Panadería Las Medialunas de Mi Abuela</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-amber-50">
     <!-- Header -->
-    <header class="bg-amber-800 text-white py-6 shadow-lg">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-2">🥐 Panadería las medialunas de mi abuela</h1>
-            <p class="text-amber-200 text-lg">Las mejores medialunas del barrio</p>
+    <header class="bg-amber-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-4xl font-bold text-center">🥐 Las Medialunas de Mi Abuela</h1>
+            <p class="text-center text-amber-100 mt-2">Tradición y sabor desde 1985</p>
         </div>
     </header>
 
-    <!-- Promo Banner -->
-    <div class="bg-red-600 text-white py-4 text-center animate-pulse">
-        <p class="text-2xl md:text-3xl font-bold">🎉 ¡DOMINGOS 2x1 EN MEDIALUNAS! 🎉</p>
-    </div>
-
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 py-12">
-        <!-- Historia Section -->
-        <section class="bg-white rounded-lg shadow-xl p-8 mb-8 max-w-4xl mx-auto">
-            <div class="text-center mb-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-4">80 Años de Tradición</h2>
-                <div class="w-24 h-1 bg-amber-600 mx-auto mb-6"></div>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-amber-100 to-amber-50 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold text-amber-900 mb-4">Medialunas Artesanales</h2>
+            <p class="text-xl text-amber-800 mb-8">Hechas con amor, como las de la abuela</p>
+            <div class="bg-red-600 text-white inline-block px-8 py-4 rounded-lg shadow-xl transform hover:scale-105 transition">
+                <p class="text-2xl font-bold">🎉 PROMO SÁBADOS 🎉</p>
+                <p class="text-3xl font-extrabold mt-2">2x1 en Medialunas</p>
             </div>
-            <p class="text-lg text-gray-700 leading-relaxed text-center">
-                Desde hace <span class="font-bold text-amber-800">80 años</span>, nuestra panadería ha sido el corazón del barrio. 
-                Con la receta original de mi abuela, horneamos cada día las medialunas más deliciosas y frescas. 
-                Nuestro compromiso es mantener viva la tradición familiar y el sabor auténtico que nos caracteriza.
-            </p>
-        </section>
+        </div>
+    </section>
 
-        <!-- Productos Destacados -->
-        <section class="max-w-4xl mx-auto mb-8">
-            <h2 class="text-3xl font-bold text-amber-900 text-center mb-8">Nuestras Especialidades</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-2xl transition">
-                    <div class="text-6xl mb-4">🥐</div>
-                    <h3 class="text-xl font-bold text-amber-800 mb-2">Medialunas</h3>
-                    <p class="text-gray-600">Crujientes por fuera, suaves por dentro</p>
+    <!-- Productos -->
+    <section class="py-16 container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-amber-900 mb-12">Nuestros Productos</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                <div class="text-6xl text-center mb-4">🥐</div>
+                <h3 class="text-2xl font-bold text-amber-800 text-center mb-2">Medialunas de Manteca</h3>
+                <p class="text-gray-600 text-center mb-4">Clásicas y esponjosas, recién horneadas</p>
+                <p class="text-3xl font-bold text-amber-900 text-center">$800/docena</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                <div class="text-6xl text-center mb-4">🥖</div>
+                <h3 class="text-2xl font-bold text-amber-800 text-center mb-2">Pan Casero</h3>
+                <p class="text-gray-600 text-center mb-4">Masa madre tradicional</p>
+                <p class="text-3xl font-bold text-amber-900 text-center">$600/kg</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                <div class="text-6xl text-center mb-4">🍰</div>
+                <h3 class="text-2xl font-bold text-amber-800 text-center mb-2">Facturas Surtidas</h3>
+                <p class="text-gray-600 text-center mb-4">Vigilantes, bolas de fraile y más</p>
+                <p class="text-3xl font-bold text-amber-900 text-center">$1200/docena</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promociones -->
+    <section class="bg-amber-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-amber-900 mb-12">Promociones</h2>
+            <div class="max-w-2xl mx-auto space-y-6">
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-red-600">
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">🎊 Sábados Especiales</h3>
+                    <p class="text-lg text-gray-700">Llevá 2 docenas de medialunas y pagá solo 1. ¡Todos los sábados!</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-2xl transition">
-                    <div class="text-6xl mb-4">🍞</div>
-                    <h3 class="text-xl font-bold text-amber-800 mb-2">Pan Casero</h3>
-                    <p class="text-gray-600">Recién horneado cada mañana</p>
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-amber-600">
+                    <h3 class="text-2xl font-bold text-amber-800 mb-2">☕ Combo Desayuno</h3>
+                    <p class="text-lg text-gray-700">6 medialunas + café grande por solo $1500</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-2xl transition">
-                    <div class="text-6xl mb-4">🧁</div>
-                    <h3 class="text-xl font-bold text-amber-800 mb-2">Facturas</h3>
-                    <p class="text-gray-600">Variedad de dulces artesanales</p>
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-green-600">
+                    <h3 class="text-2xl font-bold text-green-700 mb-2">🎂 Pedidos Especiales</h3>
+                    <p class="text-lg text-gray-700">Tortas y facturas para eventos. Consultá por WhatsApp</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Promo Destacada -->
-        <section class="bg-gradient-to-r from-red-500 to-orange-500 rounded-lg shadow-2xl p-8 max-w-4xl mx-auto text-white text-center">
-            <h2 class="text-4xl font-bold mb-4">¡Promoción Especial!</h2>
-            <div class="bg-white text-red-600 rounded-lg p-6 inline-block">
-                <p class="text-5xl font-bold mb-2">2x1</p>
-                <p class="text-2xl font-semibold">Medialunas</p>
-                <p class="text-xl mt-2">Todos los Domingos</p>
+    <!-- Horarios y Contacto -->
+    <section class="py-16 container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h3 class="text-3xl font-bold text-amber-900 mb-6 text-center">⏰ Horarios</h3>
+                <div class="space-y-3 text-lg">
+                    <p class="flex justify-between"><span class="font-semibold">Lunes a Viernes:</span> <span>7:00 - 20:00</span></p>
+                    <p class="flex justify-between"><span class="font-semibold">Sábados:</span> <span>7:00 - 21:00</span></p>
+                    <p class="flex justify-between"><span class="font-semibold">Domingos:</span> <span>8:00 - 13:00</span></p>
+                </div>
             </div>
-            <p class="mt-6 text-xl">¡No te lo pierdas! Vení temprano porque se agotan rápido</p>
-        </section>
-    </main>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h3 class="text-3xl font-bold text-amber-900 mb-6 text-center">📍 Contacto</h3>
+                <div class="space-y-4 text-lg">
+                    <p><span class="font-semibold">📞 Teléfono:</span><br>(011) 4567-8900</p>
+                    <p><span class="font-semibold">📱 WhatsApp:</span><br>+54 9 11 2345-6789</p>
+                    <p><span class="font-semibold">📍 Dirección:</span><br>Av. Rivadavia 1234<br>Buenos Aires</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-amber-900 text-white py-8 mt-12">
+    <footer class="bg-amber-900 text-white py-8">
         <div class="container mx-auto px-4 text-center">
-            <p class="text-lg mb-2">📍 Visitanos en el barrio</p>
-            <p class="text-amber-200">Horneando con amor desde hace 80 años</p>
-            <p class="mt-4 text-sm text-amber-300">© 2024 Panadería las medialunas de mi abuela</p>
+            <p class="text-lg mb-2">🥐 Las Medialunas de Mi Abuela</p>
+            <p class="text-amber-200">Tradición familiar desde 1985</p>
+            <p class="text-sm text-amber-300 mt-4">© 2024 - Todos los derechos reservados</p>
         </div>
     </footer>
 </body>
